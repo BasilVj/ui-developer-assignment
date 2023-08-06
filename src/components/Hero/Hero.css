@@ -1,0 +1,260 @@
+.hero__padding {
+    padding: 1rem 7.5rem;
+}
+
+.app__hero {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: rgb(252, 195, 2);
+}
+
+.hero__headertext {
+    font-size: 67px;
+    color: #FFFFFF;
+    padding-bottom: 1.5rem;
+    font-weight: 500;
+    line-height: 75px;
+}
+
+.hero__content{
+    margin-right: 3rem;
+}
+
+.hero__description {
+    color: #FFFFFF;
+    font-size: 29px;
+    padding-bottom: 2.5rem;
+    line-height: 35px;
+    font-weight: 300;
+    text-align: justify;
+}
+
+.custom__button-1 {
+    width: 185px;
+    height: 72px;
+    background: rgba(0, 190, 201, 1);
+    font-size: 21px;
+    color: #FFFFFF;
+    border: none;
+    border-radius: 10px;
+    margin-right: 2rem;
+    transition: all .5s;
+}
+
+.custom__button-1:hover {
+    cursor: pointer;
+    background: #FFFFFF;
+    color: rgba(0, 190, 201, 1);
+
+}
+
+.custom__button-2 {
+    width: 185px;
+    height: 72px;
+    background: rgb(252, 195, 2);
+    font-size: 21px;
+    color: #FFFFFF;
+    border: 3px solid #FFFFFF;
+    border-radius: 10px;
+    margin-right: 2rem;
+}
+
+.custom__button-2:hover {
+    cursor: pointer;
+    background: #FFFFFF;
+    color: rgb(252, 195, 2);
+    transition: all .5s;
+}
+
+
+.hero__img {
+    width: 419px;
+    height: 604px;
+}
+
+.hero__img img {
+    height: 90%;
+}
+@media screen and (max-width:1300px) {
+    .br {
+        display: none;
+    }
+}
+@media screen and (max-width:1024px) {
+    .br {
+        display: block;
+    }
+    .app__hero {
+        flex-direction: column-reverse;
+        height: 100%;
+    }
+
+    .hero__padding {
+        padding: 1rem 7.5rem;
+    }
+
+    .hero__description {
+        line-height: 40px;
+    }
+.hero__img{
+    padding-bottom: 1rem;
+}
+    .hero__img img {
+        height: 100%;
+    }
+    .button-container{
+        padding-bottom: 2rem;
+    }
+}
+
+@media screen and (max-width:950px) {
+    .app__hero {
+        flex-direction: column-reverse;
+        height: 100vh;
+    }
+    .hero__padding {
+        padding: 1rem 4rem;
+    }
+
+}
+
+@media screen and (max-width:800px) {
+
+    
+    .hero__img{
+        padding-bottom: 0rem;
+    }
+    .app__hero {
+        height: 100%;
+    }
+    .hero__padding {
+        padding: 1rem 3rem;
+    }
+    .hero__content{
+        margin-right: 0rem;
+    }
+
+}
+
+@media screen and (max-width:650px) {
+    .button-container{
+        display: flex;
+        justify-content: center;
+    }
+    .app__hero {
+        flex-direction: column-reverse;
+        height: 100%;
+    }
+
+    .hero__img img {
+        height: 90%;
+    }
+
+
+    .hero__headertext {
+        font-size: 2rem;
+        padding-bottom: .5rem;
+        line-height: 45px;
+        text-align: center;
+    }
+
+    .br {
+        display: none;
+    }
+
+    .hero__padding {
+        padding: 1rem 2rem;
+    }
+
+    .hero__img {
+        width: 319px;
+        height: 504px;
+    }
+
+    .hero__description {
+        font-size: 1.2rem;
+        text-align: justify;
+        line-height: 27px;
+        text-align: center;
+
+    }
+
+    .custom__button-1 {
+        width: 150px;
+        height: 52px;
+        font-size: 1rem;
+        margin-right: 2rem;
+
+    }
+
+    .custom__button-2 {
+        width: 150px;
+        height: 52px;
+        font-size: 1rem;
+        margin-right: 0rem;
+    }
+}
+
+@media screen and (max-width:450px) {
+    .app__hero {
+        height: 100vh;
+    }
+    .hero__padding {
+        padding: 1rem 1rem;
+    }
+}
+
+@media screen and (max-width:400px) {
+    .app__hero {
+        height: 100%;
+    }
+
+    .hero__padding {
+        padding: 1rem 1rem;
+    }
+
+    .custom__button-1 {
+        margin-right: .9rem;
+        width: 130px;
+    }
+
+    .custom__button-2 {
+        width: 130px;
+    }
+
+
+}
+
+@media screen and (max-width:300px) {
+
+
+    .hero__img {
+        width: 209px;
+        height: 394px;
+    }
+
+    .custom__button-1 {
+        margin-right: .9rem;
+        width: 110px;
+    }
+
+    .custom__button-2 {
+        width: 110px;
+    }
+
+    
+    .hero__headertext {
+        font-size: 1.6rem;
+        padding-bottom: .5rem;
+        line-height: 35px;
+        text-align: center;
+    }
+    .hero__description {
+        font-size: 1.1rem;
+        text-align: center;
+    }
+    
+
+}

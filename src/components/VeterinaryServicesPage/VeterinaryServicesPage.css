@@ -1,0 +1,250 @@
+.app__veterinary {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: rgb(255, 255, 255);
+    position: relative;
+}
+
+.Veterinary__headertext {
+    font-size: 50px;
+    color: #313243;
+    line-height: 60px;
+    font-weight: 550;
+    padding-bottom: 1.5rem;
+    padding-top: .5rem;
+}
+
+.veterinary__padding {
+    padding: 1rem 7.5rem;
+}
+
+.wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+.veterinary__description {
+    font-size: 29px;
+    color: #313243;
+    line-height: 35px;
+    font-weight: 350;
+    padding-bottom: 2rem;
+}
+
+.custom__button {
+    width: 185px;
+    height: 72px;
+    background: rgb(252, 195, 2);
+    font-size: 21px;
+    color: #FFFFFF;
+    font-weight: 600;
+    border: 3px solid #FFFFFF;
+    border-radius: 10px;
+    transition: all 0.4s;
+}
+
+.custom__button:hover {
+    cursor: pointer;
+    color: black;
+}
+
+.box {
+    width: 252px;
+    height: 206px;
+    background: rgba(252, 195, 2, 1);
+    position: absolute;
+    top: 265px;
+    right: 270px;
+}
+
+
+/*Responsive styles */
+@media screen and (max-width:1300px) {
+    .box {
+        width: 225px;
+        height: 200px;
+        top: 245px;
+        right: 270px;
+    }
+}
+
+@media screen and (max-width:1050px) {
+    .wrapper {
+        flex-direction: column-reverse;
+    }
+     .app__veterinary {
+        height: 100%;
+    }
+    .Veterinary__headertext {
+        padding-top:2rem;
+    }
+    .app__wrapper_info {
+        padding-top: 4rem;
+    }
+    
+    .box {
+        width: 270px;
+        height: 245px;
+        top: 320px;
+        right: 450px;
+    }
+    
+
+
+
+}
+@media screen and (max-width:950px) {
+    .veterinary__padding {
+        padding: 2rem 4rem;
+    }
+     .box {
+        width: 340px;
+        height: 255px;
+        top: 390px;
+        right: 410px;
+    }
+    .veterinary__description {
+        text-align: justify;
+    }
+}
+@media screen and (max-width:850px) {
+    .box {
+        width: 280px;
+        height: 235px;
+        top: 330px;
+        right: 385px;
+    }
+}
+
+@media screen and (max-width:800px) {
+    .veterinary__padding {
+        padding: 1rem 3rem;
+    }
+
+    .box {
+        width: 265px;
+        height: 220px;
+    }
+
+    .app__wrapper_info {
+        padding-top: 4rem;
+    }
+    .Veterinary__headertext {
+        padding-top: 1rem;
+    }
+}
+
+@media screen and (max-width:650px) {
+    .app__veterinary {
+        height: 100%;
+    }
+
+    .box {
+        width: 200px;
+        height: 160px;
+        top: 230px;
+        right: 260px;
+    }
+
+    .veterinary__padding {
+        padding: 0rem 2rem;
+    }
+
+    .wrapper {
+        flex-direction: column-reverse;
+        justify-content: flex-start;
+        align-items: flex-start;
+    }
+    .button-container{
+        display: flex;
+        justify-content: center;
+        width: 100%;
+    }
+
+    .Veterinary__headertext {
+        font-size: 2rem;
+        line-height: 45px;
+        padding-bottom: 1rem;
+        padding-top: 0rem;
+        text-align: center;
+    }
+
+    .veterinary__description {
+        font-size: 1.2rem;
+        text-align: justify;
+        line-height: 27px;
+        padding-bottom: 2rem;
+        text-align: center;
+    }
+
+
+}
+
+@media screen and (max-width:450px) {
+    .veterinary__padding {
+        padding: 0rem 1rem;
+    }
+
+
+    .box {
+        width: 155px;
+        height: 140px;
+        top: 170px;
+        right: 210px;
+    }
+
+
+    .custom__button {
+        width: 150px;
+        height: 52px;
+        font-size: 1rem;
+    }
+
+}
+
+@media screen and (max-width:400px) {
+    .box {
+        width: 155px;
+        height: 136px;
+        top: 160px;
+        right: 190px;
+    }
+
+}
+
+@media screen and (max-width:380px) {
+    .box {
+        width: 155px;
+        height: 120px;
+        top: 160px;
+        right: 175px;
+    }
+}
+
+@media screen and (max-width:360px) {
+    .box {
+        width: 145px;
+        height: 120px;
+        top: 155px;
+        right: 175px;
+    }
+}
+
+@media screen and (max-width:300px) {
+    .Veterinary__headertext {
+        font-size: 1.6rem;
+        line-height: 35px;
+    }
+
+    .box {
+        width: 105px;
+        height: 105px;
+        top: 105px;
+        right: 135px;
+    }
+}
