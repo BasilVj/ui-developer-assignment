@@ -3,16 +3,20 @@ import "./Footer.css";
 import images from "../../constants/images";
 import footerLinks from "../../constants/Footerlinks";
 const Footer = () => {
-  console.log(footerLinks);
   return (
-    <div className="app__footer footer-padding ">
+    // Footer section container
+    <div className="app__footer footer-padding">
       <div className="footerlinks-conatainer">
+        {/* Loop through the footerLinks array */}
         {footerLinks.map((footerLink, index) => (
           <div key={index} className="footerlink-wrapper">
+            {/* Display the title for each footer section */}
             <h2 className="footer__link-headtext">{footerLink.title}</h2>
             <ul className="footer-links">
+              {/* Loop through the links array for each footer section links */}
               {footerLink.links.map((link, index) => (
                 <li key={index}>
+                  {/* Display each link in the footer section */}
                   <a href="#">{link}</a>
                 </li>
               ))}
@@ -20,11 +24,12 @@ const Footer = () => {
           </div>
         ))}
       </div>
-      <div>
+      <div className="container">
         <div className="text-align">
           <h1 className="title">Title Here</h1>
-          <p className="para">Lorem Ipsum available, but the majorit</p>
+          <p className="para">Lorem Ipsum available, but the majority</p>
         </div>
+        {/* Input field in the footer */}
         <div className="footer__input-container">
           <input type="text" className="footer-input" />
           <div className="paper__plane-icon">
@@ -32,10 +37,23 @@ const Footer = () => {
           </div>
         </div>
         <div className="social">
-          <img className="social-icon" src={images.instagram} alt="instagram-icon" />
-          <img className="social-icon" src={images.facebook} alt="facebook-icon" />
-          <img className="social-icon" src={images.twitter} alt="twitter-icon" />
-          <img  src={images.whatsapp} alt="whatsapp-icon" />
+          {/* Social media icons */}
+          <img
+            className="social-icon"
+            src={images.instagram}
+            alt="instagram-icon"
+          />
+          <img
+            className="social-icon"
+            src={images.facebook}
+            alt="facebook-icon"
+          />
+          <img
+            className="social-icon"
+            src={images.twitter}
+            alt="twitter-icon"
+          />
+          <img src={images.whatsapp} alt="whatsapp-icon" />
         </div>
       </div>
     </div>

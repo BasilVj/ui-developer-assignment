@@ -11,7 +11,7 @@
 }
 
 .hero__headertext {
-    font-size: 67px;
+    font-size: 4.1875rem;
     color: #FFFFFF;
     padding-bottom: 1.5rem;
     font-weight: 500;
@@ -24,7 +24,7 @@
 
 .hero__description {
     color: #FFFFFF;
-    font-size: 29px;
+    font-size: 1.8125rem;
     padding-bottom: 2.5rem;
     line-height: 35px;
     font-weight: 300;
@@ -35,7 +35,7 @@
     width: 185px;
     height: 72px;
     background: rgba(0, 190, 201, 1);
-    font-size: 21px;
+    font-size: 1.3125rem;
     color: #FFFFFF;
     border: none;
     border-radius: 10px;
@@ -54,7 +54,7 @@
     width: 185px;
     height: 72px;
     background: rgb(252, 195, 2);
-    font-size: 21px;
+    font-size: 1.3125rem;
     color: #FFFFFF;
     border: 3px solid #FFFFFF;
     border-radius: 10px;
@@ -77,22 +77,16 @@
 .hero__img img {
     height: 90%;
 }
+
+/*Responsive styles */
+
 @media screen and (max-width:1300px) {
-    .br {
-        display: none;
-    }
+    
 }
-@media screen and (max-width:1024px) {
-    .br {
-        display: block;
-    }
+@media screen and (max-width:1150px) {
     .app__hero {
         flex-direction: column-reverse;
         height: 100%;
-    }
-
-    .hero__padding {
-        padding: 1rem 7.5rem;
     }
 
     .hero__description {
@@ -115,7 +109,7 @@
         height: 100vh;
     }
     .hero__padding {
-        padding: 1rem 4rem;
+        padding: 2rem 4rem;
     }
 
 }
@@ -130,7 +124,7 @@
         height: 100%;
     }
     .hero__padding {
-        padding: 1rem 3rem;
+        padding: 2rem 3rem;
     }
     .hero__content{
         margin-right: 0rem;
@@ -160,12 +154,9 @@
         text-align: center;
     }
 
-    .br {
-        display: none;
-    }
 
     .hero__padding {
-        padding: 1rem 2rem;
+        padding: 2rem 2rem;
     }
 
     .hero__img {
@@ -202,17 +193,13 @@
         height: 100vh;
     }
     .hero__padding {
-        padding: 1rem 1rem;
+        padding: 2rem 1rem;
     }
 }
 
 @media screen and (max-width:400px) {
     .app__hero {
         height: 100%;
-    }
-
-    .hero__padding {
-        padding: 1rem 1rem;
     }
 
     .custom__button-1 {

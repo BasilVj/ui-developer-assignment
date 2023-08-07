@@ -4,11 +4,11 @@ import "./App.css";
 const App = () => {
   return (
     <div>
-      {/*<Navbar/>*/}
+      <Navbar/>
       <Hero/>
       <VeterinaryServicesPage/>
       <Services/>
-      {/*<Footer/>*/}
+      <Footer/>
     </div>
   );
 };
